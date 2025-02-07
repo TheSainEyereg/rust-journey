@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = [ "api","base", "downloads", "fs", "iced", "memory", "multithreading", "project", "snake-bevy", "snake-tui", "sqlite"]
