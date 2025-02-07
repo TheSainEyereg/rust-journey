@@ -7,7 +7,7 @@ This repo will contain my journey through the Rust programming language.
 |-|-|-|-|
 | 📅 | 🚧 | ✅ | 💀 |
 
-1. [📅](/base) Basic language featurees like loops, variables, functions
+1. [✅](/base) Basic language featurees like loops, variables, functions
 0. [📅](/memory) Lifetimes and memory management
 0. [📅](/project) Structs and project architecture
 0. [📅](/multithreading) Multithreading with "shared variables"
