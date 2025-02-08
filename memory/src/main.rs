@@ -27,6 +27,12 @@ fn main() {
     *num += 1;
     println!("Third element is {}", *num);
     println!("Vector is now {:?}", v);
+
+    let mut s = String::from("hello world");
+    let word = first_word(&s);
+    // s.clear(); // We can't do this, because word is a reference to s
+    println!("the first word is: {}", word);
+    s.clear(); // Now we can, but it's the end of the program
 }
 
 fn plus_one(x: i32) -> i32 {
@@ -56,4 +62,16 @@ fn return_string_static() -> &'static str {
 fn return_string_my<'a>() -> &'a str {
     let a: &str = "Hello";
     a
+}
+
+fn first_word(s: &String) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
 }
