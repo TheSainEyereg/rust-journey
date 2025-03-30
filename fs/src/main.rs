@@ -1,6 +1,6 @@
 use std::{
     env, fs,
-    io::{Read, Write},
+    io::{BufRead, BufReader, Read},
     path,
 };
 
@@ -29,11 +29,16 @@ fn main() {
         String::from_utf8(Vec::from(buffer)).unwrap()
     );
 
+    let reader = BufReader::new(&stream);
+    let mut string = reader.lines().next().unwrap().unwrap().to_lowercase();
+
+    println!("String: {string}");
+
     let mut content = fs::read_to_string(file_path).expect("Error reading file");
     let slice = content.as_mut_str();
     slice.make_ascii_uppercase();
 
-    fs::write(file_path, content).expect("Error writing file");
+    string.push_str(slice);
 
-    stream.write(&buffer).expect("Error writing file");
+    fs::write(file_path, string).expect("Error writing file");
 }
