@@ -9,9 +9,9 @@ This repo will contain my journey through the Rust programming language.
 
 1. [✅](/base) Basic language featurees like loops, variables, functions
 0. [✅](/memory) Lifetimes and memory management
-0. [🚧](/project) Structs and project architecture
-0. [📅](/multithreading) Multithreading with "shared variables"
+0. [✅](/project) Structs and project architecture
 0. [📅](/fs) FS access, fs watch, file streams.
+0. [📅](/multithreading) Multithreading with "shared variables"
 0. [🚧](/network) Networking (TCP/UDP)
 0. [📅](/downloads) Multithreading downloads
 0. [📅](/snake-tui) Snake game using [crossterm](https://github.com/crossterm-rs/crossterm)
