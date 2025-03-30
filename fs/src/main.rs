@@ -30,13 +30,13 @@ fn main() {
     );
 
     let reader = BufReader::new(&stream);
-    let mut string = reader.lines().next().unwrap().unwrap().to_lowercase();
+    let mut string = reader.lines().next().unwrap().unwrap().to_uppercase();
 
     println!("String: {string}");
 
     let mut content = fs::read_to_string(file_path).expect("Error reading file");
     let slice = content.as_mut_str();
-    slice.make_ascii_uppercase();
+    slice.make_ascii_lowercase();
 
     string.push_str(slice);
 
