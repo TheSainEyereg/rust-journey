@@ -18,7 +18,10 @@ This repo will contain my journey through the Rust programming language.
 0. [📅](/sqlite) Working with SQLite
 0. [📅](/api) Simple web API using Actix and MongoDB
 0. [📅](/snake-bevy) Snake game using [Bevy](https://bevyengine.org/)
-0. [📅](/iced) Simple Iced app (like calculator with WebView with ad in it XD)
+0. gRPC microservices:
+	1. [📅](/grpc-postgre) Basic gRPC server with PostgreSQL 
+	1. [📅](/grpc-rest-redis) gRPC client for server above with Axum for REST API and Redis for caching 
+0. [📅](/iced) Simple Iced app (like calculator with a WebView box for ad in it XD)
 
 ### Planned projects
 1. [📅 (rust branch)](https://github.com/TheSainEyereg/VK-Audio-Examples/tree/rust) Reimplementation of [VK-Audio-Examples](https://github.com/TheSainEyereg/VK-Audio-Examples) in Rust with mulltithreading downloads
